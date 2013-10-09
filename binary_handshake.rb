@@ -21,8 +21,12 @@ class SecretHandshake
         result << "wink"
       end
     end
-    
-  result
-
+   
+     if @string.to_i < 10000
+      result.reverse
+     else
+      result
+     end
   end
+
 end
